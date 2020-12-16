@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <UserSecretsId>dotnet-WorkerService-C4B60CBE-D2EB-468B-8D1E-EBF0E779593C</UserSecretsId>
+        <LangVersion>9</LangVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.10" />
+        <PackageReference Include="MQTTnet.Extensions.ManagedClient" Version="3.0.13" />
+    </ItemGroup>
+</Project>
