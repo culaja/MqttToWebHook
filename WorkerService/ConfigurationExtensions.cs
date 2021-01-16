@@ -11,6 +11,10 @@ namespace WorkerService
                 ushort.Parse(configuration["Mqtt:Port"]),
                 configuration["Mqtt:UserName"],
                 configuration["Mqtt:Password"],
+                bool.Parse(configuration["Mqtt:ShouldUseTls"]),
+                configuration["Mqtt:CertificatePfxBase64"],
+                configuration["Mqtt:CertificatePfxPassword"],
+                bool.Parse(configuration["Mqtt:ShouldValidateBrokerCertificate"]),
                 configuration["Mqtt:ClientId"],
                 configuration["Mqtt:SubscribeToTopic"]);
 
